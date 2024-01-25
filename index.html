@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silvia Diah Lestari - Portofolio</title>
+    <style>
+        body {
+            margin: 0;
+            padding-top: 56px;
+            background-color: #F5E8C7;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .navbar {
+            background-color: #FFA500;
+            color: #FFFFFF;
+            font-family: 'Arial', sans-serif;
+            position: fixed;
+            height: 10%;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar-brand {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 15px;
+            text-decoration: none;
+            color: #FFFFFF;
+        }
+
+        .jumbotron {
+            background-color: #F5E8C7;
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        .display-1 {
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        .display-2 {
+            font-size: 1.2em;
+        }
+
+        #beranda {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        #beranda img {
+            width: 200px;
+            height: 200px;
+            border: 2px solid #FFA500;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        #about-me {
+            background-color: #f8f9fa;
+            padding: 5em 0;
+            text-align: justify;
+            padding-left: 5em;
+            padding-right: 5em;
+        }
+
+        #about-me h2 {
+            color: #FFA500;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        #contact-me {
+            background-color: #f8f9fa;
+            padding: 5em 0;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        #contact-me h2 {
+            color: #FFA500;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+
+#contact-me .slider-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+#contact-me .slides {
+    display: flex;
+    animation: slide 12s infinite;
+    width: 500px;
+    /* height: 100px; */
+    
+    
+}
+
+#contact-me .slide {
+    flex: 0 0 100%;
+}
+
+#contact-me img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Optional: add rounded corners to images */
+}
+
+@keyframes slide {
+    0%, 100% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-100%);
+    }
+
+    50% {
+        transform: translateX(-200%);
+    }
+
+    75% {
+        transform: translateX(-300%);
+    }
+}
+
+
+
+        footer {
+            background-color: #FFA500;
+            color: #FFFFFF;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <br>
+        <a class="navbar-brand" href="#" style="padding-left: 3em;">Silvia Diah Lestari</a>
+    </nav>
+
+    <!-- Jumbotron - Pengenalan Diri -->
+    <section id="beranda" class="jumbotron">
+        <div>
+            <img src="Gambar WhatsApp 2024-01-21 pukul 20.23.51_5d14baa1.jpg" alt="Silvia Diah Lestari"
+                class="img-fluid rounded-circle">
+        </div>
+        <div>
+            <h1 class="display-3">Silvia Diah Lestari</h1>
+            <p class="lead"><span class="display-2">Kompetensi Rekayasa Perangkat Lunak</span></p>
+            <p class="lead"><span class="display-2">Karawang, Jawa Barat</span></p>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about-me">
+        <div>
+            <h2>About Me</h2>
+            <p>
+                Nama Saya Silvia Diah Lestari, seorang siswi SMK Texar Klari Karawang tahun ajaran 2023-2026 dengan
+                jurusan Rekayasa Perangkat Lunak. Saya mengikuti ekstrakulikuler di sekolah yaitu silat karena saya
+                mempunyai ketertarikan pada seni bela diri, maka dari itu saya mengikuti kegiatan UKT (Ujian Kenaikan
+                Tingkat), dan saya juga mengikuti ekstrakulikuler Bahasa Jepang.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Me Section -->
+<section id="contact-me">
+    <div>
+        <h2>My Photos</h2>
+        <br>
+        <!-- Photo Slider -->
+        <div class="slider-container">
+            <div class="slides">
+                <div class="slide">
+                    <img src="Gambar WhatsApp 2024-01-21 pukul 20.23.49_7c7c711c.jpg" alt="Photo 1" style="height: 780px;">
+                </div>
+                <div class="slide">
+                    <img src="Gambar WhatsApp 2024-01-21 pukul 20.23.52_0ad1f1dd.jpg" alt="Photo 2" style="height: 780px;">
+                </div>
+                <div class="slide">
+                    <img src="Gambar WhatsApp 2024-01-21 pukul 20.23.52_5bc0067b.jpg" alt="Photo 3" style="height: 780px;">
+                </div>
+                <div class="slide">
+                    <img src="Gambar WhatsApp 2024-01-21 pukul 20.26.10_103b4067.jpg" alt="Photo 4" style="height: 780px;">
+                </div>
+            </div>
+        </div>
+        <!-- End Photo Slider -->
+    </div>
+</section>
+
+            <!-- End Photo Slider -->
+    <!-- My Portfolio Section -->
+    <footer>
+        <p>&copy; 2024 Silvia Diah Lestari All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
